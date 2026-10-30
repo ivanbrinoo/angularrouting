@@ -6,6 +6,7 @@ import { CineComponent } from './components/cine-component/cine-component';
 import { NotFoundComponent } from './components/not-found-component/not-found-component';
 import { NumerosParesComponent } from './components/numeros-pares-component/numeros-pares-component';
 import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
+import { FormsselectNumerosDoblesComponent } from './components/formsselect-numeros-dobles-component/formsselect-numeros-dobles-component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'cine', component: CineComponent },
   {path: "pares", component: NumerosParesComponent},
   {path:"tabla", component: TablaMultiplicarComponent},
+  {path: "dobles", component: FormsselectNumerosDoblesComponent},
   { path:  "**" , component: NotFoundComponent }
 ];
 
