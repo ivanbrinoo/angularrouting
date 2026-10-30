@@ -1,0 +1,17 @@
+<h1>Numeros Pares</h1>
+<div class="input-group input-group-sm mb-3">
+<form formulario="ngForm">
+    Introduce el numero inicial: <input type="number" name="cajanumero1" #cajanumero1 class="form-control"/><br/>
+    Introduce el numero final <input type="number" name="cajanumero2" #cajanumero2 class="form-control"/><br/>
+    <button (click)="mostrarPares()"class="btn btn-primary">Mostrar pares en el rango</button>
+</form>
+</div>
+<h2>Los numeros pares en el rango son {{arraynumeros.length}}</h2>
+
+<table border="1">
+        @for (num of arraynumeros; track num) {
+            <tr>
+                <td>{{num}}</td>
+            </tr>
+        }
+    </table>

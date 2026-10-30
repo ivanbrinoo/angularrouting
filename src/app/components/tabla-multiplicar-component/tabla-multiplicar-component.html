@@ -1,0 +1,14 @@
+<h1>Tabla Multiplicar</h1>
+<div class="input-group input-group-sm mb-3">
+<form formulario="ngForm">
+    Introduce un numero <input type="number" name="cajanumero" #cajanumero class="form-control"/>
+    <button (click)="tablaMultiplicar()" class="btn btn-info">Multiplicar
+
+    </button>
+</form>
+</div>
+<ul class="list-group">
+    <li *ngFor="let i of arraynumeros" class="list-group-item">
+        {{ numero * i }}
+    </li>
+</ul>
