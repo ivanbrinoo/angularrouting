@@ -1,11 +1,11 @@
 <form formulario="ngForm">
     Introduce un numero:
     <select name="cajanumero" #cajanumero>
-        <option>10</option>
-        <option>27</option>
-        <option>36</option>
-        <option>41</option>
-        <option>59</option>
+        @for (num of arraynumeros; track num){
+            <option>{{num}}</option>
+        }
     </select>
     <button (click)="numeroDoble()">Doblar el numero</button>
+    <button (click)="generarNumero()">Numero Random</button>
 </form>
+<h2>El doble de este numero es {{doble}}</h2>
