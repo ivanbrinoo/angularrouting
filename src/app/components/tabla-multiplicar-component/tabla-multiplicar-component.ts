@@ -12,6 +12,7 @@ export class TablaMultiplicarComponent {
 numero: any;
 
 tablaMultiplicar(): void {
+  this.arraynumeros = []
   this.numero = parseInt(this.cajanumero.nativeElement.value);
   for(let i = 1; i <= 10; i++)
     this.arraynumeros.push(i);
