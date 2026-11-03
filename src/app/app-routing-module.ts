@@ -7,14 +7,17 @@ import { NotFoundComponent } from './components/not-found-component/not-found-co
 import { NumerosParesComponent } from './components/numeros-pares-component/numeros-pares-component';
 import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
 import { FormsselectNumerosDoblesComponent } from './components/formsselect-numeros-dobles-component/formsselect-numeros-dobles-component';
+import { NumeroDobleComponent } from './components/numero-doble-component/numero-doble-component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "musica", component: MusicaComponent },
   { path: 'cine', component: CineComponent },
-  {path: "pares", component: NumerosParesComponent},
-  {path:"tabla", component: TablaMultiplicarComponent},
-  {path: "dobles", component: FormsselectNumerosDoblesComponent},
+  { path: "pares", component: NumerosParesComponent},
+  { path:"tabla", component: TablaMultiplicarComponent},
+  { path: "dobles", component: FormsselectNumerosDoblesComponent},
+  { path: "doble", component: NumeroDobleComponent},
+  { path: "doble/:numero", component: NumeroDobleComponent},
   { path:  "**" , component: NotFoundComponent }
 ];
 
